@@ -1,6 +1,6 @@
 # streamlabs-niconico-like-chatbox
 
-streamlabsのchatboxを使って、配信のコメントがランダムに出現して、右から左に流れる様にする
+streamlabsのchatboxを使って、配信のコメントが右から左に流れる様にする
 
 
 ## 使い方
@@ -9,16 +9,14 @@ streamlabsのchatboxを使って、配信のコメントがランダムに出現
 
 #### streamlabsに登録
 
-https://streamlabs.com/
-
-streamlabsに登録してchatboxを使える状態にする
+https://streamlabs.com/ ：streamlabsに登録してchatboxを使える状態にする
 
 
 #### chatbox設定の変更
 
 streamlabs/dashboard内のchatboxページで設定を変更できる
 
-いくつかの設定は今回使用する*edited.html/css* によって反映されないので、それらを確認する
+いくつかの設定は今回使用する*nicoLike.html/css* によって反映されないので、それらを確認する
 
 - テーマ、背景色：設定は反映されないようになっているので、defaultのままにする
 - バッジ：表示されないようになっているが、一応全てチェックを外しておく
