@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+@keyframes LtoR {    
+    0% {left: 120%;}
+    100% {left: 0%;} 
+}
+
+@keyframes RtoL {
+    0% {right: 0%;}
+    100% {right: 120%;}
+}
+
+* {
+    box-sizing: content-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    text-shadow: 0 0 1px #000, 0 0 2px #000;
+    background: {background_color};
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: {font_size};
+    line-height: 1.5em;
+    color: {text_color};
+}
+
+.colon {
+    display: none;
+}
+
+#log {
+    display: block;
+    position: absolute;
+    top: 100;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+    width: 100%;
+}
+
+#log>div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+}
+
+#log>div.deleted {
+    visibility: hidden;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .emote img {
+    display: inline-block;
+    height: 1em;
+    opacity: 0;
+}
+
+#log .message {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    padding-bottom: 0.1em;
+    opacity: .8;
+    animation: LtoR 5s linear, RtoL 5s linear 5s forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+    -webkit-animation: LtoR 5s linear, RtoL 5s linear 5s forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+}
