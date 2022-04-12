@@ -44,10 +44,16 @@ body {
     color: {text_color};    
     display: block;
     position: absolute;
-    bottom: 81%;
+    bottom: 20%;
     left: 85%;
-    padding: 10px 10px 10px;
-    width: 18%;
+    padding: 25px 10px 25px;
+    width: 14%;
+}
+
+#table_log .message {
+    display: block;
+    line-height: 100%;
+    margin-top: 8%;
 }
 
 #table_log .emote {
@@ -115,4 +121,3 @@ body {
     animation: LtoR 5s linear, RtoL 5s linear 5s forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
     -webkit-animation: LtoR 5s linear, RtoL 5s linear 5s forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
 }
-
