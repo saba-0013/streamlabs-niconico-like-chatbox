@@ -1,12 +1,14 @@
 <!-- item will be appened to this layout -->
 <div id="log" class="sl__chat__layout">
 </div>
+<div id="table_log" class="sl__chat__layout table_log">
+</div>
 
 <!-- chat item -->
 <script type="text/template" id="chatlist_item">
-    <div data-from="{from}" data-id="{messageId}" class="table_row">
-        <span class="table_message">
-        {message}
-        </span>
-    </div>
+  <div id="{messageId}" data-from="{from}" data-id="{messageId}">
+    <span class="message">
+      {message}
+    </span>
+  </div>
 </script>
